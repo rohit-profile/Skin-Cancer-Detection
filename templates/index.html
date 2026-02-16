@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Cancer Detection</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+        form { margin: 20px 0; }
+        input[type="file"] { margin: 20px 0; }
+        img { max-width: 400px; margin-top: 20px; border: 2px solid #ddd; padding: 5px; }
+        .prediction { font-size: 1.5em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Skin Cancer Detection</h1>
+    <p>Upload an image of a skin lesion and see if it is <strong>Benign</strong> or <strong>Malignant</strong>.</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if filename %}
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+    {% endif %}
+
+    {% if prediction %}
+        <div class="prediction">Prediction: {{ prediction }}</div>
+    {% endif %}
+
+    <hr>
+    <h3>About the Model</h3>
+    <p>This model uses CNN architecture to predict whether a skin lesion is <strong>Benign</strong> or <strong>Malignant</strong>.</p>
+    <ul>
+        <li><strong>Input:</strong> Skin lesion images</li>
+        <li><strong>Output:</strong> Benign or Malignant classification</li>
+        <li><strong>How to use:</strong> Upload an image and click Predict.</li>
+    </ul>
+</body>
+</html>

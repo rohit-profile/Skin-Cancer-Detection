@@ -42,9 +42,6 @@ You can try the live web application without setting up anything locally:
 
 
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/Skin-Cancer-Detection-with-CNN-Deep-Learning.git
 
 ## Dataset
 The dataset used for this project is publicly available and contains labeled images of skin lesions, categorized as benign or malignant.  

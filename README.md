@@ -32,9 +32,25 @@ The model is trained on a dataset of skin lesion images and uses **Deep Learning
 
 ---
 
+
+## Usage
+
+###  Access the Deployed Web App
+You can try the live web application without setting up anything locally:  
+[**Skin Cancer Detection Web App**]([(https://huggingface.co/spaces/rohit-profile/Skin-Cancer-Detection)])  
+*(Replace this with your own deployment URL once live)*
+
+
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/Skin-Cancer-Detection-with-CNN-Deep-Learning.git
+
 ## Dataset
 The dataset used for this project is publicly available and contains labeled images of skin lesions, categorized as benign or malignant.  
 
+
+ ### Live Link--> [(https://huggingface.co/spaces/rohit-profile/Skin-Cancer-Detection)]
 ---
 
 ## Usage
